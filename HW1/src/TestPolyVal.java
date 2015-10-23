@@ -17,5 +17,13 @@ public class TestPolyVal {
 		// TODO Auto-generated method stub
 
 	}
+	
+	public static void calculateBruteForce(int[] args) {
+		
+	}
+	
+	public static void raiseToPower(int[] args) {
+		
+	}
 
 }
