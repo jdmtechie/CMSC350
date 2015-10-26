@@ -5,6 +5,7 @@
  * File: TestPolyVal.java
  * Date: 25 OCT 2015
  * IDE: eclipse with JRE 1.8
+ * Git Test
  */
 import java.util.concurrent.ThreadLocalRandom;
 
