@@ -81,10 +81,24 @@ public class TestPolyVal {
 		return polyVal;
 	}//close calculateHorner
 	
-	//Runs test runs
-	public long meanTime() {
-		for(int i = 0; )
-	}
+	//executes calculator method 105 times, doesn't record first 5 entries
+	//True for Brute Force, False for Horner
+	//returns mean run time of called method
+	public long meanTime(boolean BF) {
+		long sum = 0;
+		for(int i = 1; i <= 105; i++) {
+			Long start = System.nanoTime();
+			if(true) this.calculateBruteForce();
+			if(false) this.calculateHorner();
+			Long end = System.nanoTime();
+			if(i > 5){
+				sum += end - start;
+			}
+		}
+		sum = sum / 100;
+		return sum;
+	}//end meanTime
+	
 	//Instantiates object TestPolyVal and prints relevant information
 	public static void main(String[] args) {
 		TestPolyVal a = new TestPolyVal(10);
@@ -93,15 +107,10 @@ public class TestPolyVal {
 		System.out.println(a);
 		System.out.println("n = " + a.x);
 		
-		Long startBrute = System.nanoTime();
 		System.out.println("Brute Force Result: " + a.calculateBruteForce());
-		Long endBrute = System.nanoTime();
-		
-		Long startHorner = System.nanoTime();
 		System.out.println("Horner Result: " + a.calculateHorner());
-		Long endHorner = System.nanoTime();
 		
-		System.out.println("Brute Force Time: " + (endBrute - startBrute) + " nanoseconds");
-		System.out.println("Horner Time: " + (endHorner - startHorner) + " nanoseconds");	
+		System.out.println("Brute Force Mean Time: " + a.meanTime(true) + " nanoseconds");
+		System.out.println("Horner's Mean Time: " + a.meanTime(false) + " nanoseconds");	
 	}//close main
 }//close TestPolyVal class
