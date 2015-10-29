@@ -7,6 +7,8 @@
  * IDE: eclipse with JRE 1.8
  * Git Test number 2
  */
+
+//This is the comment added on the iMac
 import java.util.concurrent.ThreadLocalRandom;
 
 //Tests 2 methods for evaluating polynomial equations
