@@ -1,11 +1,11 @@
 /*
  * Course: CMSC 350
  * Assignment: Homework 1
- * Author: James Moore
+ * Author: James Moore is Cool
  * File: TestPolyVal.java
  * Date: 25 OCT 2015
  * IDE: eclipse with JRE 1.8
- * Git Test
+ * Git Test number 2
  */
 import java.util.concurrent.ThreadLocalRandom;
 
